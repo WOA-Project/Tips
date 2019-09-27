@@ -32,7 +32,8 @@ namespace Tips
             ("CtrlAltDel", typeof(CtrlAltDelPage)),
             ("DirectX", typeof(DirectXPage)),
             ("Thermals", typeof(ThermalsPage)),
-            ("USB", typeof(USBPage))
+            ("USB", typeof(USBPage)),
+            ("Info", typeof(InfoPage))
         };
 
         public MainPage()
