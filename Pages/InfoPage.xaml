@@ -17,7 +17,8 @@
         </contract7Present:Grid.BackgroundTransition>
 
         <!-- Content -->
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="1"
+                      Canvas.ZIndex="10">
             <StackPanel>
                 <!-- App info -->
                 <StackPanel Margin="{ThemeResource DialogCategoryMargin}">
@@ -143,7 +144,7 @@
 
         </ScrollViewer>
 
-        <!-- Dialog background icon -->
+        <!-- Background icon -->
         <FontIcon Grid.Row="1"
                   Canvas.ZIndex="5"
                   Visibility="Visible"

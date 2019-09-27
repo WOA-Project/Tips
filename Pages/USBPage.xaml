@@ -8,13 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Padding="25">
-            <RichTextBlock IsTextSelectionEnabled="False">
-                <Paragraph>
-                    Your phone supports data connections and host connections. You can learn more and switch to different modes using the USB Function Mode Switcher app in the start menu. For USB Type C devices, the mode won't automatically switch when you insert a device into the USB C port. You must also be careful with the disclaimers explained in detail in USB Function Mode Switcher. Your phone does not currently support video out via the USB C port.
-                </Paragraph>
-            </RichTextBlock>
-        </StackPanel>
-    </ScrollViewer>
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Padding="24">
+                <RichTextBlock IsTextSelectionEnabled="False">
+                    <Paragraph>
+                        Your phone supports data connections and host connections. You can learn more and switch to different modes using the USB Function Mode Switcher app in the start menu. For USB Type C devices, the mode won't automatically switch when you insert a device into the USB C port. You must also be careful with the disclaimers explained in detail in USB Function Mode Switcher. Your phone does not currently support video out via the USB C port.
+                    </Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Background icon -->
+        <FontIcon Grid.Row="1"
+                  Canvas.ZIndex="5"
+                  Visibility="Visible"
+                  Glyph="&#xE88E;"
+                  FontSize="72"
+                  Foreground="{ThemeResource SystemControlForegroundBaseLowBrush}"
+                  Margin="24"
+                  HorizontalAlignment="Right"
+                  VerticalAlignment="Bottom"/>
+    </Grid>
 </Page>
