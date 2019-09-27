@@ -7,7 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- Fameworks -->
+                <!-- Frameworks -->
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <FluiFrameworkThemeResources xmlns="using:FluiFramework.UWP.Core" />
 
