@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Tips.Pages.CtrlAltDelPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tips.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Padding="25">
+            <RichTextBlock IsTextSelectionEnabled="False">
+                <Paragraph>
+                    To access the CTRL+ALT+DEL menu on your phone, you need to first press the power button, then while holding the power button, press the volume down button, and then release both buttons.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock Text="Lumia 950 XL" FontSize="18" FontWeight="Medium" Margin="0,50,0,25"/>
+            <Image Source="ms-appx:///Assets/cityman.png" MaxHeight="768" HorizontalAlignment="Left"/>
+            <TextBlock Text="Hapanero, Lumia 950, Jade Primo" FontSize="18" FontWeight="Medium"  Margin="0,50,0,25"/>
+            <Image Source="ms-appx:///Assets/talkman.png" MaxHeight="768" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Tips.Pages.USBPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tips.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Padding="25">
+            <RichTextBlock IsTextSelectionEnabled="False">
+                <Paragraph>
+                    Your phone supports data connections and host connections. You can learn more and switch to different modes using the USB Function Mode Switcher app in the start menu. For USB Type C devices, the mode won't automatically switch when you insert a device into the USB C port. You must also be careful with the disclaimers explained in detail in USB Function Mode Switcher. Your phone does not currently support video out via the USB C port.
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
