@@ -8,18 +8,38 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Padding="25">
-            <Image Source="ms-appx:///Assets/charging.png" MaxWidth="768" HorizontalAlignment="Left"/>
-            <RichTextBlock IsTextSelectionEnabled="False" Margin="0,25,0,0">
-                <Paragraph>
-                    When your phone charges, it displays a plug icon next to the battery icon in the system tray.
-                    <LineBreak></LineBreak><LineBreak></LineBreak>If you do not see this plug icon, it may be because you're using a quick charge adapter that turns out to be currently incompatible with your phone.
-                    <LineBreak></LineBreak>It may also take a while for charging to start. When the phone starts charging, a sound is played to notify you.
-                    <LineBreak></LineBreak><LineBreak></LineBreak>To double check that the issue is not linked to the quick charge adapter you're using, try to charge the phone using a data cable, plugged in to a PC USB port.
-                    <LineBreak></LineBreak><LineBreak></LineBreak>Tip: The phone charges faster when it is locked, in standby mode.
-                </Paragraph>
-            </RichTextBlock>
-        </StackPanel>
-    </ScrollViewer>
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      Canvas.ZIndex="10">
+            <StackPanel Padding="24">
+                <Image Source="ms-appx:///Assets/charging.png" MaxWidth="768" HorizontalAlignment="Left"/>
+                <RichTextBlock IsTextSelectionEnabled="False" Margin="0,25,0,0">
+                    <Paragraph>
+                        When your phone charges, it displays a plug icon next to the battery icon in the system tray.
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak> If you do not see this plug icon, it may be because you're using a quick charge adapter that turns out to be currently incompatible with your phone.
+                        <LineBreak></LineBreak> It may also take a while for charging to start. When the phone starts charging, a sound is played to notify you.
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak> To double check that the issue is not linked to the quick charge adapter you're using, try to charge the phone using a data cable, plugged in to a PC USB port.
+                        <LineBreak></LineBreak>
+                        <LineBreak></LineBreak> Tip: The phone charges faster when it is locked, in standby mode.
+                    </Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <!-- Background icon -->
+        <FontIcon Grid.Row="1"
+                  Canvas.ZIndex="5"
+                  Visibility="Visible"
+                  Glyph="&#xE857;"
+                  FontSize="72"
+                  Foreground="{ThemeResource SystemControlForegroundBaseLowBrush}"
+                  Margin="24"
+                  HorizontalAlignment="Right"
+                  VerticalAlignment="Bottom"/>
+    </Grid>
+
+
 </Page>

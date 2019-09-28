@@ -12,6 +12,15 @@
 
     <Grid>
         <muxc:NavigationView x:Name="NavView" OpenPaneLength="392" IsSettingsVisible="False" Loaded="NavView_Loaded" ItemInvoked="NavView_ItemInvoked" BackRequested="NavView_BackRequested">
+            <!-- Header Template -->
+            <muxc:NavigationView.HeaderTemplate>
+                <DataTemplate x:DataType="x:String">
+                    <TextBlock Text="{x:Bind}"
+                               Margin="12,0,0,0"
+                               Style="{ThemeResource FluentSubheaderTextStyle}" />
+                </DataTemplate>
+            </muxc:NavigationView.HeaderTemplate>
+            <!-- Items -->
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem Content="Battery" Tag="Battery">
                     <muxc:NavigationViewItem.Icon>
@@ -43,11 +52,17 @@
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE88E;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Content="Info" Tag="Info">
+                    <muxc:NavigationViewItem.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE946;"/>
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
             </muxc:NavigationView.MenuItems>
+
             <Frame x:Name="ContentFrame" IsTabStop="True"/>
         </muxc:NavigationView>
 
-        <Grid VerticalAlignment="Top" Height="30">
+        <Grid VerticalAlignment="Top" Height="32">
             <controls:TitlebarControl x:Name="Titlebar"/>
         </Grid>
     </Grid>
