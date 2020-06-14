@@ -18,7 +18,7 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-    <PackageCertificateThumbprint>27A3A86C46E07601EFF32A0DE1BE901A4A589D54</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>0C621A92C67CDD2186E4CD138C08E1F1DE8D16B4</PackageCertificateThumbprint>
     <PackageCertificateKeyFile />
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
@@ -278,13 +278,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluiFramework.UWP">
-      <Version>0.0.29</Version>
+      <Version>0.0.33</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.8</Version>
+      <Version>6.2.10</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.UI.Xaml">
-      <Version>2.2.190731001-prerelease</Version>
+      <Version>2.5.0-prerelease.200609001</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
