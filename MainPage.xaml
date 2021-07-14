@@ -8,62 +8,63 @@
     mc:Ignorable="d"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:controls="using:Tips.Controls"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <muxc:NavigationView x:Name="NavView" OpenPaneLength="392" IsSettingsVisible="False" Loaded="NavView_Loaded" ItemInvoked="NavView_ItemInvoked" BackRequested="NavView_BackRequested">
-            <!-- Header Template -->
-            <muxc:NavigationView.HeaderTemplate>
-                <DataTemplate x:DataType="x:String">
-                    <TextBlock Text="{x:Bind}"
-                               Margin="12,0,0,0"
-                               Style="{ThemeResource FluentSubheaderTextStyle}" />
-                </DataTemplate>
-            </muxc:NavigationView.HeaderTemplate>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <controls:TitlebarControl x:Name="Titlebar"
+                                  HorizontalAlignment="Stretch"/>
+
+        <muxc:NavigationView x:Name="NavView"
+                             Grid.Row="1"
+                             IsSettingsVisible="False" 
+                             Loaded="NavView_Loaded"
+                             ItemInvoked="NavView_ItemInvoked" 
+                             BackRequested="NavView_BackRequested">
             <!-- Items -->
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem Content="Battery" Tag="Battery">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE857;"/>
+                        <FontIcon Glyph="&#xE857;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="Cellular" Tag="Cellular">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE904;"/>
+                        <FontIcon Glyph="&#xE904;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="Ctrl + Alt + Del" Tag="CtrlAltDel">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE1DE;"/>
+                        <FontIcon Glyph="&#xE1DE;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="Direct X" Tag="DirectX">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7F4;"/>
+                        <FontIcon Glyph="&#xE7F4;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="Thermals" Tag="Thermals">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE950;"/>
+                        <FontIcon Glyph="&#xE950;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="USB" Tag="USB">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE88E;"/>
+                        <FontIcon Glyph="&#xE88E;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
                 <muxc:NavigationViewItem Content="Info" Tag="Info">
                     <muxc:NavigationViewItem.Icon>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE946;"/>
+                        <FontIcon Glyph="&#xE946;"/>
                     </muxc:NavigationViewItem.Icon>
                 </muxc:NavigationViewItem>
             </muxc:NavigationView.MenuItems>
 
             <Frame x:Name="ContentFrame" IsTabStop="True"/>
         </muxc:NavigationView>
-
-        <Grid VerticalAlignment="Top" Height="32">
-            <controls:TitlebarControl x:Name="Titlebar"/>
-        </Grid>
     </Grid>
 </Page>

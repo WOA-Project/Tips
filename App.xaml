@@ -8,26 +8,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!-- Frameworks -->
-                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" ControlsResourcesVersion="Version2" />
                 <FluiFrameworkThemeResources xmlns="using:FluiFramework.UWP.Core" />
-
-                <!-- Local ResourceDictionaries -->
-                <ResourceDictionary>
-                    <ResourceDictionary.ThemeDictionaries>
-                        <ResourceDictionary x:Key="Dark">
-                            <media:AcrylicBrush x:Key="NavigationViewDefaultPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                            <media:AcrylicBrush x:Key="NavigationViewTopPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                            <media:AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                        </ResourceDictionary>
-                        <ResourceDictionary x:Key="Light">
-                            <media:AcrylicBrush x:Key="NavigationViewDefaultPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                            <media:AcrylicBrush x:Key="NavigationViewTopPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                            <media:AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" BackgroundSource="HostBackdrop" TintColor="{StaticResource SystemChromeMediumLowColor}" TintOpacity="0.7" FallbackColor="{StaticResource SystemChromeMediumLowColor}"/>
-                        </ResourceDictionary>
-                        <ResourceDictionary x:Key="HighContrast">
-                        </ResourceDictionary>
-                    </ResourceDictionary.ThemeDictionaries>
-                </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

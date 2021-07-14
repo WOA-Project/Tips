@@ -5,13 +5,12 @@
     xmlns:local="using:Tips.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
     <Grid>
         <ScrollViewer Canvas.ZIndex="10"
                       VerticalScrollBarVisibility="Auto">
-            <StackPanel Padding="24">
+            <StackPanel Padding="56,24">
                 <RichTextBlock IsTextSelectionEnabled="False">
                     <Paragraph>
                         Your phone supports Cellular on Windows 10 builds lower or equal than 18908. No Windows 10 build higher than 18908 will have cellular working on your phone.
@@ -36,7 +35,7 @@
                   Glyph="&#xE904;"
                   FontSize="72"
                   Foreground="{ThemeResource SystemControlForegroundBaseLowBrush}"
-                  Margin="24"
+                  Margin="56,24"
                   HorizontalAlignment="Right"
                   VerticalAlignment="Bottom"/>
     </Grid>
