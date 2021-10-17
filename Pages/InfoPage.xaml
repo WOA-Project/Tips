@@ -64,7 +64,7 @@
                     </Grid>
 
                     <!-- About Description -->
-                    <TextBlock Text="Phone Tips, created and maintained by WOA Project, 2018-2019"
+                    <TextBlock Text="Phone Tips, created and maintained by WOA Project, 2018-2021"
                                TextWrapping="Wrap"
                                Margin="0,2,0,0"/>
                 </StackPanel>
